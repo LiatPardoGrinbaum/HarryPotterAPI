@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3cae5c2bbd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <!--  <div class="imgContainer">
+      <img src="./assets/hogwarts.jpg" alt="hogwarts" class="bgImg" />
+    </div> -->
+    <div class="container">
+      <h1 class="pageTitle">Harry Potter</h1>
+      <div class="searchBar">
+        <input type="text" id="input-search" placeholder="Search for a charecter" />
+        <button type="submit" id="button-search"><i class="fa-brands fa-searchengin"></i></button>
+      </div>
+      <div class="allCharacters">Get all Characters</div>
+      <div class="spinner">Loading...</div>
+      <div class="error"></div>
+      <div class="cardsContainer"></div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

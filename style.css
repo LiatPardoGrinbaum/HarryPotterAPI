@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: harryPotterFont;
+  src: url(./assets/HARRYP__.TTF);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-attachment: fixed; */
+  background: url("./assets/hogwarts.jpg") no-repeat center center/cover fixed;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  z-index: 1;
+  background-color: rgba(8, 8, 8, 0.756);
+}
+
+/* .imgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.688);
+}
+
+.imgContainer .bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  z-index: -1;
+} */
+
+.pageTitle {
+  font-size: 6rem;
+  font-weight: lighter;
+  font-family: harryPotterFont;
+  text-shadow: 2px 2px 5px #ffea4d;
+  z-index: inherit;
+}
+
+.searchBar {
+  display: flex;
+  z-index: inherit;
+  margin-top: 3rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(163, 156, 156, 0.4) 0px 1px 4px;
+}
+
+input {
+  padding: 0.5rem;
+  width: 30rem;
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background: black;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  margin: 0;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  background: rgb(82, 80, 80);
+}
+
+button:hover {
+  background: rgb(170, 167, 167);
+  cursor: pointer;
+}
+
+button:hover .fa-searchengin {
+  color: black;
+}
+
+.fa-searchengin {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.spiner {
+  display: none;
+}
+
+/* charecters cards */
+
+.cardsContainer {
+  margin: 2rem;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cardContainer {
+  width: 250px;
+  height: 360px;
+  position: relative;
+  /* margin: 1.3rem; */
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.detailsContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  background: rgba(51, 41, 41, 0.83);
+}
+
+.cardContainer:hover .detailsContainer {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.2rem;
+  padding: 1rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detailsContainer .name {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px dotted white;
+  line-height: 5rem;
+}
+
+.error {
+  display: none;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.5rem;
+  font-size: 22px;
+}
+
+.allCharacters {
+  color: rgb(144, 144, 144);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.allCharacters:hover {
+  color: white;
+}
